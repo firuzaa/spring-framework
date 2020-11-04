@@ -3,6 +3,9 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="javaCourse" class="com.company.services.Java"></bean>
+    <bean id="javaCourse" class="com.company.services.Java">
+        <constructor-arg ref="officeHours"/>
+    </bean>
     <bean id="seleniumCourse" class="com.company.services.Selenium"></bean>
+    <bean id="officeHours" class="com.company.services.OfficeHours"></bean>
 </beans>
