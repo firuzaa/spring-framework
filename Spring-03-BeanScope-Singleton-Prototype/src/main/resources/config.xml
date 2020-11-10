@@ -3,7 +3,9 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="javaCourse" class="services.Java"></bean>
+    <bean id="javaCourse" class="services.Java" scope="prototype">
+
+    </bean>
     <bean id="seleniumCourse" class="services.Selenium"></bean>
 
 </beans>
