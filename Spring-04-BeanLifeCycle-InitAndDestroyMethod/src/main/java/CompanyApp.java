@@ -7,12 +7,9 @@ public class CompanyApp {
 
         ApplicationContext container = new ClassPathXmlApplicationContext("config.xml");
         Course javaCourse = container.getBean("javaCourse", Course.class);
-        Course javaCourse2 = container.getBean("javaCourse", Course.class);
+        javaCourse.getTeachingHours();
 
-        System.out.println("Pointing to the same object: " + (javaCourse == javaCourse2));
-        System.out.println("Memory Location for the Course1 : " + javaCourse);
-        System.out.println("Memory Location for the Course2 : " + javaCourse2);
-
+        ((ClassPathXmlApplicationContext)container).close();
 
     }
 }

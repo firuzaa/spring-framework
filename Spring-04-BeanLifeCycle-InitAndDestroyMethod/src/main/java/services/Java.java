@@ -8,7 +8,7 @@ public class Java implements Course {
         System.out.println("Weekly Teaching java hours: 20" );
     }
 
-    public void muInitMethod(){
+    public void myInitMethod(){
         System.out.println("Executing init method");
     }
 
