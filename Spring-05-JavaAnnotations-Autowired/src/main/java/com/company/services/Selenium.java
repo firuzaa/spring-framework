@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class Selenium implements Course {
 
+    //Field injection
     @Autowired
     private OfficeHours officeHours;
 
