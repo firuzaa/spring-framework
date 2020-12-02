@@ -18,5 +18,27 @@
 <h2 th:text="${student.getId()}"></h2>
 <h2 th:text="${student.firstname}"></h2>
 
+
+<!--link-->
+<a th:href="@{http://www.amazon.com}">Amazon</a><br>
+<a th:href="@{/student/register}">Register</a><br>
+
+
+<!--Adding parameters to link-->
+<a th:href="@{/student/welcome(id=2)}">Link3</a><br>
+<a th:href="@{/student/welcome(id=${student.getId()})}">Link4</a>
+
+<!--Iteration-->
+<ul>
+    <li th:each="num : ${number}" th:text="${num}" ></li>
+</ul>
+
+<!--Fragment-->
+<div th:replace="fragments/footer ::footer"></div>
+
+
+
+
+
 </body>
 </html>
