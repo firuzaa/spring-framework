@@ -5,6 +5,7 @@
     <title>Student Welcome Page</title>
 </head>
 <body>
+<!--Text-->
 <h1>Student welcome page</h1>
 <h2 th:text="${ 'Hello ' + name}"></h2>
 <h2 th:text="${ 'Age: ' + age}"></h2>
@@ -13,6 +14,9 @@
 <h2 th:text="${stuID}"></h2>
 <h2 th:text="${number}"></h2>
 <h2 th:text="${bday}"></h2>
+
+<h2 th:text="${student.getId()}"></h2>
+<h2 th:text="${student.firstname}"></h2>
 
 </body>
 </html>

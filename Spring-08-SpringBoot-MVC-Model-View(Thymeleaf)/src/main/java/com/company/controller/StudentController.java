@@ -1,5 +1,6 @@
 package com.company.controller;
 
+import com.company.model.Student;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -35,6 +36,10 @@ public class StudentController {
 
         LocalDate bday = LocalDate.now().minusYears(25);
         model.addAttribute("bday",bday);
+
+        Student student = new Student(1,"Mike","Smith");
+        model.addAttribute("student",student);
+
 
         return "student/welcome";
     }
