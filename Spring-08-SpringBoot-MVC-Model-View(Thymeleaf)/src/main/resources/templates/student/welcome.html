@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Welcome Page</title>
+</head>
+<body>
+<h1>Student welcome page</h1>
+<h2 th:text="${ 'Hello ' + name}"></h2>
+<h2 th:text="${ 'Age: ' + age}"></h2>
+<h2 th:text="${ 'Current course: '+ course}"></h2>
+<h2 th:text="subject"></h2>
+<h2 th:text="${stuID}"></h2>
+<h2 th:text="${number}"></h2>
+<h2 th:text="${bday}"></h2>
+
+</body>
+</html>
